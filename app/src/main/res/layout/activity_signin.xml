@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:padding="20dp"
+    tools:context=".signinActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="277dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_fields"
+        android:layout_below="@id/logoImage"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:background="@drawable/input_fields"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/emailInput"
+        android:layout_marginTop="20dp" />
+    <CheckBox
+        android:id="@+id/showPasswordCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInput"
+        android:text="Show Password" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SIGN IN"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/showPasswordCheckBox"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
+

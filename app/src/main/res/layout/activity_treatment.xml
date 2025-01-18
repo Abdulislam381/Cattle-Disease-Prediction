@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+       >
+
+
+        <TextView
+            android:id="@+id/treatmentGuideTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cattle Disease Treatment Guide"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/introductionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the treatment guide. Here, you can find information about various cattle diseases and their recommended treatments."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchTreatmentField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for a disease"
+            android:padding="12dp"
+            android:background="@drawable/input_fields"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+
+        <LinearLayout
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/input_fields"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/diseaseNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/diseaseDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Description"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/diseaseTreatmentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Treatment"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactUsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/contactUsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For any inquiries or support, please reach out to us via the following channels:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: 21101003-097@uskt.edu.pk"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +123 456 7890"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: 1-Km Main, Daska Rd, Sialkot, Punjab 51040, University of Sialkot"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</ScrollView>

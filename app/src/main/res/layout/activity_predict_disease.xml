@@ -1,0 +1,166 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Cattle Symptoms Input"
+            android:textColor="@color/primary_text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/cattleIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_fields"
+            android:hint="Enter ID for the cattle (e.g 001)"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/cattleNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name of the cattle (e.g Raja)"
+            android:background="@drawable/input_fields"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Cattle's Image"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/primary_text"/>
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            android:text="Upload Image"
+            android:drawableRight="@drawable/ic_camera"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/cattleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/symptom_salivation"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_ulcers"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_weight_loss"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_anorexia"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_abortions"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_arthrogyposis"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_blood_loss"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_blisters"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_coughing"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_depression"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_diarrhoea"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_dull"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_fever"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_loss_of_appetite"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_milk_fever"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_nasal_discharges"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_reduction_milk_yields"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_reduces_feed_intake"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_torticollis"
+            layout="@layout/symptom_block" />
+
+        <include
+            android:id="@+id/symptom_high_temp"
+            layout="@layout/symptom_block" />
+
+
+
+        <Button
+            android:id="@+id/predictDiseaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="Predict Disease"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
