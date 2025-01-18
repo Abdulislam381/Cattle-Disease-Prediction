@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+
+    <TextView
+        android:id="@+id/pastPredictionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Past Predictions"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+
+            <ImageView
+                android:id="@+id/cattleImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample_cattle_image" />
+
+            <TextView
+                android:id="@+id/cattleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cattle Name: Raja"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/cattleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cattle ID: 12345"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/diseaseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disease: Disease name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#D32F2F"
+                android:layout_marginTop="8dp" />
+
+
+            <TextView
+                android:id="@+id/suggestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestions: Consult a vet immediately."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+
+            <TextView
+                android:id="@+id/predictionDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 00-Jan-2025, Time: 00:01 PM"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/predictAnotherDiseaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Predict Another Disease"
+        android:background="@drawable/button_background"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+</LinearLayout>

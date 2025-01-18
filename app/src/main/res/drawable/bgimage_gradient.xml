@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gradient -->
+    <item>
+        <shape>
+            <gradient
+                android:type="linear"
+                android:startColor="#A8E6CF"
+                android:endColor="#D0F4F7"
+                android:angle="40"/>
+        </shape>
+    </item>
+
+    <!-- Image with specified width and height -->
+    <item>
+        <bitmap
+            android:src="@drawable/background_image"
+            android:scaleType="centerCrop"
+            android:gravity="center"
+            android:width="150dp"
+            android:height="150dp"/>
+    </item>
+</layer-list>
+

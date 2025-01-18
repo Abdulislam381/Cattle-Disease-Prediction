@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PredictionResultsActivity">
+
+
+    <TextView
+        android:id="@+id/predictionResultsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Prediction Results"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/diseaseInfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/predictionResultsHeading"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/diseaseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disease: Disease Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/diseaseDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details: Details will displayed here"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/suggestionsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diseaseInfoCard"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/suggestionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/suggestionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestions will displayed here"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/treatmentGuideLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suggestionsCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="For more information, go to Treatment Guide"
+        android:textSize="16sp"
+        android:textColor="@color/secondary_text"
+        android:textStyle="italic"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <TextView
+        android:id="@+id/thankYouMessage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/treatmentGuideLink"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/button_background"
+        android:elevation="4dp"
+        android:lineSpacingExtra="4dp"
+        android:padding="16dp"
+        android:text="Thank you for using our application! We are committed to helping you ensure the health and well-being of your cattle. "
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:id="@+id/thankYouMessage2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thankYouMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="103dp"
+        android:background="@drawable/button_background"
+        android:elevation="4dp"
+        android:lineSpacingExtra="4dp"
+        android:padding="16dp"
+        android:text="ہمارا ایپلیکیشن استعمال کرنے کا شکریہ! ہم آپ کے مویشیوں کی صحت اور فلاح و بہبود کو یقینی بنانے میں آپ کی مدد کے لیے پرعزم ہیں۔ "
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="24dp"
+        app:background="@drawable/button_background"
+        app:srcCompat="@drawable/ic_save" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="Save Results"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
