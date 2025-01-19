@@ -25,7 +25,7 @@
             android:id="@+id/introductionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to the treatment guide. Here, you can find information about various cattle diseases and their recommended treatments."
+            android:text="Welcome to the treatment guide. Here, you can find information about various cattle diseases and their recommended treatments.You can search any disease by entering the disease name"
             android:textSize="16sp"
             android:textColor="@android:color/black"
             android:layout_marginBottom="24dp"/>
