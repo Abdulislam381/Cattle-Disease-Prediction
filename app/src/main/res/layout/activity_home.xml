@@ -24,7 +24,7 @@
             android:id="@+id/nav_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome User"
+            android:text="Welcome Farmers"
             android:textSize="18sp"
             android:textColor="@color/primary_text"
             android:layout_centerHorizontal="true"
