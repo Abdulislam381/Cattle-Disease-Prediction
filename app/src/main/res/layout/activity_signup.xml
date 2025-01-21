@@ -61,7 +61,7 @@
         android:id="@+id/phoneInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Phone Number"
+        android:hint="Enter Phone Number i.e 123456789"
         android:drawableStart="@drawable/ic_phone"
         android:drawablePadding="8dp"
         android:padding="12dp"
