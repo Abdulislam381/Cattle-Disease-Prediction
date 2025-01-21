@@ -48,7 +48,7 @@
         android:id="@+id/emailInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Email"
+        android:hint="Enter Email i.e abc123@gmai.com"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="8dp"
         android:padding="12dp"
